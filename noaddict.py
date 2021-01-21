@@ -32,12 +32,14 @@ def loop():
     save = open("save.txt","r")
     file_contents = save.read()
     print("mark the date: "+str(file_contents))
+    print("\n")
     pass
 
     
 
 def start():
     print("GOOD LUCK SOLIDER! TriHard 7 ")
+    print("\n")
     loop()
     
     
@@ -45,6 +47,7 @@ def current():
     f = open("save.txt","r")
     file_contents = f.read()
     print("you started on: ")
+    print("\n")
     print(file_contents)
     f.close()
     
@@ -53,11 +56,14 @@ def end():
     f = open("save.txt","r")
     file_contents = f.read()
     print("you started on: ")
+    print("\n")
     print(file_contents)
     f.close()
+    print("\n")
     print("you lost! BETTER LUCK NEXT TIME! ")
     f = open("save.txt","w")
     f.write("LLLLLLL")
+    print("\n")
     print("WIPING STREAK!")
     retry()
     
@@ -67,6 +73,8 @@ def end():
 
 
 print("start, current streak or end streak ")
+print("\n")
+
 choice = input("state ya purpose ")
 choice.lower()
 if choice == "start":
